@@ -39,9 +39,15 @@ class App extends Component {
       let temp = this.state.score;
       temp++;
 
-      this.setState({score: temp, 
-                     clicked: this.addToClickedArray(id),
-                     message: "" });
+      if(temp == 9) {
+        this.setState({ score: 0, 
+                        clicked: [],
+                        message: "YOU WIN!" });
+      } else {
+        this.setState({score: temp, 
+          clicked: this.addToClickedArray(id),
+          message: "" });
+      }
     }
   }
 
