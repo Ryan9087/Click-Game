@@ -11,6 +11,7 @@ import pears from "./images/pears.jpg";
 import plums from "./images/plums.jpg";
 import raspberries from "./images/raspberries.jpg";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +35,7 @@ class App extends Component {
     if(this.isAlreadyClick(id)) {
       this.setState({ score: 0,
                       clicked: [],
-                      message: "YOU ALREADY CLICKED THAT."});
+                      message: "YOU ALREADY CLICKED THAT FOOL!"});
     } else {
       let temp = this.state.score;
       temp++;
@@ -102,16 +103,24 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <div>
-          Score {this.state.score}
-        </div> 
-        <div>
-          {this.state.message}
-        </div> 
-        <div>
-          {this.state.cards}
+      <div className="masterContainer">
+      <img className="bgImage" src={ require('./images/fruitBackgroundTop.png') } />
+      <div className="container">
+        <img className="imgTitle" src={ require('./images/gcTitle.png') } />
+        <div className="row">
+            <div className="score">
+              Score {this.state.score}
+            </div>
+  
+            <div className="message">
+              {this.state.message}
+            </div> 
+                <div className="cardRow">
+                  {this.state.cards}
+            </div>
         </div>
+      </div>
+      <img className="bgImageBottom" src={ require('./images/fruitBackgroundBottom.png') } />
       </div>
     );
   }

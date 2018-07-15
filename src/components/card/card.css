@@ -1,5 +1,177 @@
-.card {
-    height: 150px;
-    width: 250px;
-    margin-top: 15px;
+.card img {
+    width: 100%; 
+    height: auto;
+    margin: 30px 0 0 0;
+    padding: 2px;
+    /* display: inline-block; */
+    border: none;
+    z-index: 200;
+    background: none; 
+}
+
+div.card {
+    border: none;
+}
+
+body {
+    background-color: white;
+}
+
+img.bgImage {
+    background-repeat: no-repeat;;
+    width: 160px;
+    height: auto;
+    padding: 0 auto 0 auto;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.bgImageBottom {
+    width: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: -18%;
+    left: 0;
+    opacity: .4;
+}
+
+.masterContainer {
+    width: 100%;
+    border: none;
+}
+
+.cardRow {
+    display: flex;
+    width: 100%;
+    border-color: none;
+    /* margin: 0 100px 0 100px; */
+
+}
+
+.imgTitle {
+    display: block;
+    margin: 16% auto 60px auto;
+    width: 50%;
+}
+
+
+.container {
+    margin: 0 auto 0 auto;
+    height: 800px;
+}
+
+.score {
+  padding: 0 50px 0 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16pt;
+}
+
+.message {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+}
+
+.cardRow {
+  display: inline-flex;
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 1200px) {
+    .imgTitle {
+        display: block;
+        margin: 19% auto 60px auto;
+        width: 50%;
+    }
+    .cardRow {
+        display: block;
+        width: 40%;
+        float: left;    
+    }
+    .row {
+        display: block;
+    }
+
+
+}
+@media screen and (max-width: 1000px) {
+    .imgTitle {
+        display: block;
+        margin: 25% auto 60px auto;
+        width: 50%;
+    }
+    .cardRow {
+        display: inline-block;
+        width: 40%;    
+    }
+    .row {
+        display: block;
+    }
+
+    .card img {
+        width: 100%; 
+        height: auto;
+        margin: 20px 0 10px 0;
+        padding: 2px;
+        border: none;
+        z-index: 200;
+        background: none; 
+        float: left;
+    }
+    
+      div.cardrow {
+        border: none;
+        display: inline-block;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    img.bgImageBottom {
+        height: cover;
+        width: auto;
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 0%;
+        left: 0;
+        opacity: .4;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .imgTitle {
+        display: block;
+        margin: 35% auto 60px auto;
+        width: 60%;
+    }
+    img.bgImage {
+        background-repeat: no-repeat;;
+        width: 135px;
+        height: auto;
+        padding: 10px auto 0 auto;
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imgTitle {
+        display: block;
+        margin: 45% auto 60px auto;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .imgTitle {
+        display: block;
+        margin: 45% auto 60px auto;
+        width: 60%;
+    }
+    .row {
+        margin: 10px
+    }
 }
