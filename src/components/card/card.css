@@ -1,8 +1,10 @@
+
+
 .card img {
-    width: 100%; 
+    width: 80%; 
     height: auto;
-    margin: 30px 0 0 0;
-    padding: 2px;
+    margin: 20px 0px 0 0px;
+    padding: 0px;
     /* display: inline-block; */
     border: none;
     z-index: 200;
@@ -11,8 +13,15 @@
 
 div.card {
     border: none;
+    align-items: center;
+    padding: 0px;
 }
 
+.card {
+   width: 30%;
+   margin: auto;
+   text-align: center;
+}
 body {
     background-color: white;
 }
@@ -44,15 +53,17 @@ img.bgImageBottom {
 
 .cardRow {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     border-color: none;
+    padding: 0;
     /* margin: 0 100px 0 100px; */
 
 }
 
 .imgTitle {
     display: block;
-    margin: 16% auto 60px auto;
+    margin: 16% auto 20px auto;
     width: 50%;
 }
 
@@ -63,7 +74,7 @@ img.bgImageBottom {
 }
 
 .score {
-  padding: 0 50px 0 5px;
+  padding: 0 50px 0 57px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16pt;
 }
@@ -75,36 +86,48 @@ img.bgImageBottom {
 }
 
 .cardRow {
-  display: inline-flex;
+  /* display: inline-flex; */
 }
 
 /* If the screen size is 600px wide or less, hide the element */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
     .imgTitle {
         display: block;
-        margin: 19% auto 60px auto;
+        margin: 19% auto 35px auto;
         width: 50%;
     }
     .cardRow {
-        display: block;
-        width: 40%;
-        float: left;    
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;   
     }
     .row {
         display: block;
     }
 
+    .card {
+        width: 30%;
+        margin: auto;
+        text-align: center;
+     }
+     .score {
+        padding: 0 50px 0 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+      }
+
 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 768px)  {
     .imgTitle {
         display: block;
         margin: 25% auto 60px auto;
         width: 50%;
     }
     .cardRow {
-        display: inline-block;
-        width: 40%;    
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;   
     }
     .row {
         display: block;
@@ -137,6 +160,11 @@ img.bgImageBottom {
         left: 0;
         opacity: .4;
     }
+    .score {
+        padding: 0 50px 0 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -155,6 +183,20 @@ img.bgImageBottom {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .score {
+        padding: 0 50px 0 28px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+    }
+    img.bgImageBottom {
+        height: cover;
+        width: auto;
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: -13%;
+        left: 0;
+        opacity: .4;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -168,7 +210,7 @@ img.bgImageBottom {
 @media screen and (max-width: 584px) {
     .imgTitle {
         display: block;
-        margin: 45% auto 60px auto;
+        margin: 39% auto 20px auto;
         width: 60%;
     }
     .row {
