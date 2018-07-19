@@ -27,7 +27,7 @@ class App extends Component {
       message: ""
     }
   }
-
+//change happens inside and outside
   getIdFromChildren(id) {
     console.log(id);
     this.suffleImages();
@@ -53,10 +53,11 @@ class App extends Component {
   }
 
   suffleImages() {
-    let arr = this.state.cards;
+    let arr = this.state.cards.slice();
     arr.sort(function(a,b) {
       return 0.5 - Math.random();
     });
+
     this.setState({cards: arr});
   }
 

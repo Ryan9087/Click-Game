@@ -74,7 +74,7 @@ img.bgImageBottom {
 }
 
 .score {
-  padding: 0 50px 0 57px;
+  padding: 0 10px 0 52px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16pt;
 }
@@ -83,6 +83,7 @@ img.bgImageBottom {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-size: 16pt;
+    padding: 0 0 0 52px;
 }
 
 .cardRow {
@@ -115,10 +116,16 @@ img.bgImageBottom {
         font-family: 'Montserrat', sans-serif;
         font-size: 16pt;
       }
+      .message {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+        padding: 0 0 0 52px;
+    }
 
 
 }
-@media screen and (max-width: 1000px) and (min-width: 768px)  {
+@media screen and (max-width: 1000px) and (min-width: 900px)  {
     .imgTitle {
         display: block;
         margin: 25% auto 60px auto;
@@ -161,13 +168,19 @@ img.bgImageBottom {
         opacity: .4;
     }
     .score {
-        padding: 0 50px 0 20px;
+        padding: 0 50px 0 25px;
         font-family: 'Montserrat', sans-serif;
         font-size: 16pt;
     }
+    .message {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+        padding: 0 0 0 25px;
+    }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 900px) and (min-width: 400px)   {
     .imgTitle {
         display: block;
         margin: 35% auto 60px auto;
@@ -184,9 +197,15 @@ img.bgImageBottom {
         transform: translate(-50%, -50%);
     }
     .score {
-        padding: 0 50px 0 28px;
+        padding: 0 50px 0 32px;
         font-family: 'Montserrat', sans-serif;
         font-size: 16pt;
+    }
+    .message {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+        padding: 0 0 0 30px;
     }
     img.bgImageBottom {
         height: cover;
@@ -199,21 +218,43 @@ img.bgImageBottom {
     }
 }
 
+@media screen and (max-width: 691px) and (min-width: 600px)   {
+    .score {
+        padding: 0 50px 0 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .imgTitle {
         display: block;
         margin: 45% auto 60px auto;
         width: 60%;
     }
+    .score {
+        padding: 0 50px 0 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16pt;
+    }
 }
 
 @media screen and (max-width: 584px) {
     .imgTitle {
         display: block;
-        margin: 39% auto 20px auto;
+        margin: 45% auto 20px auto;
         width: 60%;
     }
     .row {
         margin: 10px
     }
 }
+@media screen and (max-width: 430px) {
+    .score {
+      font-size: 7pt;
+    }
+    .message {
+      font-size: 7pt;
+    }
+}
+
